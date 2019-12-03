@@ -22,20 +22,20 @@ import java.net.URISyntaxException;
 
 public class LoginActivity extends AppCompatActivity {
   private    Button bt_login;
-  private    EditText ed_email,ed_password;
-  private    TextView tv_create,tv_forgot;
-    String str_username ,str_password;
+  private    EditText ed_hoten,ed_password;
+  private    TextView tv_signup;
+  String str_username ,str_password;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        ed_email= findViewById(R.id.ed_email);
+        ed_hoten= findViewById(R.id.ed_hoten);
         ed_password = findViewById(R.id.ed_password);
-        bt_login = findViewById(R.id.bt_login);
-        tv_create = findViewById(R.id.tv_create);
-        tv_forgot = findViewById(R.id.tv_forgot);
+        bt_login = findViewById(R.id.btn_login);
+        tv_signup = findViewById(R.id.tv_signup);
+
 
         bt_login.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -43,7 +43,7 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-        tv_create.setOnClickListener(new View.OnClickListener() {
+        tv_signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent i3 = new Intent(LoginActivity.this,RegisterActivity.class);
@@ -52,13 +52,8 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-        tv_forgot.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i4 = new Intent(LoginActivity.this,ProductsActivity.class);
-                startActivity(i4);
-            }
-        });
+
     }
+
 }
 

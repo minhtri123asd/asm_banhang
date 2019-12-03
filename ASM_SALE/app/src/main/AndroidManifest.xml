@@ -13,13 +13,15 @@
         android:theme="@style/AppTheme">
         <activity android:name=".Screen.ResetpassActivity" />
         <activity android:name=".Screen.RegisterActivity" />
-        <activity android:name=".Screen.LoginActivity"></activity>
-        <activity android:name=".Screen.ProductsActivity">
+        <activity android:name=".Screen.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".Screen.ProductsActivity">
+
         </activity>
 
     </application>
