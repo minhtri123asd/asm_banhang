@@ -45,7 +45,7 @@ public class RegisterActivity extends AppCompatActivity {
         btn_create_account.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+            AddUser(urlAdd);
             }
         });
     }
